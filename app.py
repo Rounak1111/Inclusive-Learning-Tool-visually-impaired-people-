@@ -3,6 +3,7 @@ import pdfplumber
 from flask import Flask, render_template, request
 import pyttsx3
 import textwrap
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -44,7 +45,7 @@ def extract_text_from_file(file):
         return text.strip()
     
     return None
-
+app = Flask(__name__, template_folder="templates") 
 @app.route("/")
 def index():
     return render_template("index.html")
