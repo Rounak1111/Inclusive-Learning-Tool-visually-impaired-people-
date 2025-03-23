@@ -2,4 +2,4 @@ flask
 pyttsx3
 pytesseract
 Pillow
-textwrap
+
